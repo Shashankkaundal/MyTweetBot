@@ -26,8 +26,9 @@ class TestLoginNegative:
             myaccount.go_to_my_account()
             myaccount.input_login_username(Email)
             myaccount.click_next_button()
-            myaccount.input_phone_number(Username)
-            myaccount.click_2step_next_button()
+            #below to be used in case of 2nd step twitter authentication
+            #myaccount.input_phone_number(Username)
+            #myaccount.click_2step_next_button()
             myaccount.input_login_password(Password)
             myaccount.click_login_button()
             mytweet.input_tweet(f"Play station 5 console is available on amazon india Click on following link {linked} to buy")
